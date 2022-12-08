@@ -15,6 +15,7 @@ import { GraphQLModule } from '@nestjs/graphql';
             { name: 'posts', url: 'http://localhost:3002/graphql/posts' },
             { name: 'comments', url: 'http://localhost:3003/graphql/comments' },
           ],
+          pollIntervalInMs: 2000,
         }),
       },
     }),
